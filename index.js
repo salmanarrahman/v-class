@@ -1,4 +1,4 @@
-const { PrismaClient } = require("@prisma/client");
+const { PrismaClient } = require("prisma/client");
 const express = require("express");
 const createError = require("http-errors");
 const morgan = require("morgan");
