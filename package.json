@@ -6,7 +6,9 @@
   "scripts": {
     "start": " node app.js",
     "dev": "nodemon app.js",
-    "build": "prisma generate && npx vercel --prod"
+      "postinstall": "prisma generate",
+       "vercel-build": "npx prisma generate ",
+    "build": "npx prisma generate && npx vercel --prod"
    
   },
   "keywords": [],
