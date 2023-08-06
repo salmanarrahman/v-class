@@ -6,11 +6,10 @@
   "scripts": {
     "start": "npx prisma migrate deploy && node app.js",
     "dev": "nodemon app.js",
-     "build": "prisma generate ",
-      "migrate:dev": "npx prisma migrate dev --name",
+    "build": "prisma generate",
+    "migrate:dev": "npx prisma migrate dev --name",
     "migrate:deploy": "npx prisma migrate deploy",
-      "prisma:generate": "prisma generate"
-
+    "prisma:generate": "prisma generate"
   },
   "keywords": [],
   "author": "",
