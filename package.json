@@ -4,10 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "npx prisma migrate deploy && node app.js",
-    "dev": "npx prisma generate && nodemon app.js",
-    "build": "npx prisma generate",
-    "migrate:dev": "npx prisma migrate dev --name",
+    "start": " node app.js",
+    "dev": "nodemon app.js",
+ "build": "npx prisma generate",
+     "migrate:dev": "npx prisma migrate dev --name",
     "migrate:deploy": "npx prisma migrate deploy",
     "prisma:generate": "prisma generate"
   },
