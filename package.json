@@ -4,9 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "npx prisma migrate deploy &&node app.js",
     "dev": "nodemon app.js",
-     "prisma:generate": "prisma generate"
+     "build": "npx prisma generate ",
+      "migrate:dev": "npx prisma migrate dev --name",
+    "migrate:deploy": "npx prisma migrate deploy",
   },
   "keywords": [],
   "author": "",
